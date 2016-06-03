@@ -2,7 +2,6 @@ package com.flatironschool.javacs;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.net.URL;
 
 import org.jsoup.Connection;
@@ -10,6 +9,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+import org.jsoup.nodes.Node;
 
 
 public class WikiFetcher {
@@ -32,11 +32,38 @@ public class WikiFetcher {
 
 		// select the content text and pull out the paragraphs.
 		Element content = doc.getElementById("mw-content-text");
+		Elements paras = content.getElementsByTag("p");
 
-		// TODO: avoid selecting paragraphs from sidebars and boxouts
-		Elements paras = content.select("p");
+		for (Element x : paras) {
+			System.out.println(x.parent().ownText() + " has tag " + x.parent().tagName());
+		}
+
 		return paras;
 	}
+
+	// public Element fetchWikipediaFirstParagraph(String url) throws IOException {
+	// 	//Get all paragraphs
+	// 	Elements paragraphs = this.fetchWikipedia(url);
+	// 	Element firstPara = paragraphs.get(0);
+	//
+	// 	//Check the first paragraph is in a boxout
+	// 	Iterable<Node> iter = new WikiNodeIterable(firstPara);
+	// 	for (Node node: iter) {
+	// 		if (node instanceof Element) {
+	//
+	// 			if (((Element)node).parent().tagName().equals("span")){
+	// 				System.out.println("sent out SECOND paragraph");
+	// 				return paragraphs.get(1); //Attain the second <p> tag occurrence
+	// 			} else {
+	// 				System.out.println("first");
+	// 				return firstPara; //Return original first paragraph
+	// 			}
+	//
+	// 		}
+	// 	}
+	// 	return null;
+	// }
+
 
 	/**
 	 * Reads the contents of a Wikipedia page from src/resources.
@@ -48,13 +75,14 @@ public class WikiFetcher {
 	public Elements readWikipedia(String url) throws IOException {
 		URL realURL = new URL(url);
 
-		// assemble the file name
+		// assemble the directory name
 		String slash = File.separator;
-		String filename = "resources" + slash + realURL.getHost() + realURL.getPath();
+		String dirname = System.getProperty("user.dir") + slash +
+				"src" + slash + "resources" + slash + realURL.getHost();
 
 		// read the file
-		InputStream stream = WikiFetcher.class.getClassLoader().getResourceAsStream(filename);
-		Document doc = Jsoup.parse(stream, "UTF-8", filename);
+		File input = new File(dirname, realURL.getPath());
+		Document doc = Jsoup.parse(input, "UTF-8", input.getName());
 
 		// TODO: factor out the following repeated code
 		Element content = doc.getElementById("mw-content-text");
