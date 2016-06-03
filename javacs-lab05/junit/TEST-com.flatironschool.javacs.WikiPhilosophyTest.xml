@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="Pedros-MBP-2" name="com.flatironschool.javacs.WikiPhilosophyTest" skipped="0" tests="1" time="1.063" timestamp="2016-06-03T09:02:36">
+<testsuite errors="0" failures="0" hostname="Pedros-MBP-2" name="com.flatironschool.javacs.WikiPhilosophyTest" skipped="0" tests="1" time="1.46" timestamp="2016-06-03T09:12:05">
   <properties>
     <property name="java.vendor" value="Oracle Corporation" />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -78,7 +78,7 @@
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
     <property name="ant.version" value="Apache Ant(TM) version 1.9.6 compiled on June 29 2015" />
     <property name="java.class.path" value="/Users/pedrosandoval/Documents/Learn - Code U/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/bin:/Users/pedrosandoval/Documents/Learn - Code U/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/lib/jsoup-1.8.3.jar:/Users/pedrosandoval/Documents/Learn - Code U/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/lib/junit-4.12.jar:/Users/pedrosandoval/Documents/Learn - Code U/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/lib/hamcrest-core-1.3.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-launcher.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-junit.jar:/usr/local/Cellar/ant/1.9.6/libexec/lib/ant-junit4.jar" />
-    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.flatironschool.javacs.WikiPhilosophyTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pedrosandoval/Documents/Learn - Code U/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/junit/TEST-com.flatironschool.javacs.WikiPhilosophyTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/Users/pedrosandoval/Documents/Learn - Code U/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/junitvmwatcher3177831975542166998.properties propsfile=/Users/pedrosandoval/Documents/Learn - Code U/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/junit2929422190613623401.properties" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.flatironschool.javacs.WikiPhilosophyTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/Users/pedrosandoval/Documents/Learn - Code U/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/junit/TEST-com.flatironschool.javacs.WikiPhilosophyTest.xml formatter=org.apache.tools.ant.taskdefs.optional.junit.PlainJUnitResultFormatter crashfile=/Users/pedrosandoval/Documents/Learn - Code U/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/junitvmwatcher2099310951504341742.properties propsfile=/Users/pedrosandoval/Documents/Learn - Code U/cs-wikipedia-philosophy-lab-codeU/javacs-lab05/junit7593928491256371892.properties" />
     <property name="env.TERM_SESSION_ID" value="2630B170-88FB-4722-B83E-154F484F417B" />
     <property name="ant.file.type.JavaCS" value="file" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
@@ -91,7 +91,6 @@
     <property name="java.io.tmpdir" value="/var/folders/f1/5d_l0vdx46zg2sd40g_r7shc0000gn/T/" />
     <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
     <property name="env.SSH_AUTH_SOCK" value="/private/tmp/com.apple.launchd.qwYSvf7BoU/Listeners" />
-    <property name="env.JAVA_MAIN_CLASS_31536" value="org.apache.tools.ant.launch.Launcher" />
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment" />
     <property name="os.arch" value="x86_64" />
     <property name="java.ext.dirs" value="/Users/pedrosandoval/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_74.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java" />
@@ -101,12 +100,13 @@
     <property name="basedir" value="/Users/pedrosandoval/Documents/Learn - Code U/cs-wikipedia-philosophy-lab-codeU/javacs-lab05" />
     <property name="ant.java.version" value="1.8" />
     <property name="ant.core.lib" value="/usr/local/Cellar/ant/1.9.6/libexec/lib/ant.jar" />
+    <property name="env.JAVA_MAIN_CLASS_31625" value="org.apache.tools.ant.launch.Launcher" />
     <property name="source" value="1.7" />
     <property name="file.encoding" value="UTF-8" />
     <property name="java.specification.version" value="1.8" />
     <property name="ant.project.invoked-targets" value="test" />
   </properties>
-  <testcase classname="com.flatironschool.javacs.WikiPhilosophyTest" name="testMain" time="0.997" />
+  <testcase classname="com.flatironschool.javacs.WikiPhilosophyTest" name="testMain" time="1.393" />
   <system-out><![CDATA[ has tag div
  has tag div
  has tag div
